@@ -1,0 +1,171 @@
+{
+	"DesignTimeTarget": {
+		"Service": "/MDKApp/Services/IncidentManagement.service",
+		"EntitySet": "Incident",
+		"QueryOptions": "$expand=customer"
+	},
+	"Controls": [
+		{
+			"DataSubscriptions": [],
+			"FilterFeedbackBar": {
+				"ShowAllFilters": false,
+				"_Type": "Control.Type.FilterFeedbackBar"
+			},
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable",
+			"Sections": [
+				{
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.ProfileHeader",
+					"_Name": "SectionProfileHeader0",
+					"Visible": true,
+					"ProfileHeader": {
+						"DetailImage": "sap-icon://customer",
+						"DetailImageIsCircular": true,
+						"Headline": "{customer/FirstName} {customer/LastName}",
+						"Subheadline": "{customer/AddressCity} {customer/AddressCountry}",
+						"Description": "",
+						"ActivityItems": [
+							{
+								"_Name": "SectionProfileHeader0ActivityItems0",
+								"ActivityType": "Phone",
+								"ActivityValue": "{customer/Phone}"
+							},
+							{
+								"_Name": "SectionProfileHeader0ActivityItems1",
+								"ActivityType": "Email",
+								"ActivityValue": "{customer/Email}"
+							},
+							{
+								"_Name": "SectionProfileHeader0ActivityItems2",
+								"ActivityType": "Message",
+								"ActivityValue": "{customer/Phone}"
+							}
+						]
+					}
+				},
+				{
+					"KeyAndValues": [
+						{
+							"LinkColor": "#6189C7",
+							"Value": "/MDKApp/Rules/Customer/Customer_FormatAddress.js",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue0",
+							"KeyName": "Customer Addresss",
+							"Visible": true,
+							"OnPress": "/MDKApp/Rules/Customer/Customer_OpenMaps.js"
+						},
+						{
+							"Value": "{ID}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue1",
+							"KeyName": "Incident ID",
+							"Visible": true
+						},
+						{
+							"Value": "{Title}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue2",
+							"KeyName": "Title",
+							"Visible": true
+						},
+						{
+							"Value": "{Description}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue3",
+							"KeyName": "Description",
+							"Visible": true
+						},
+						{
+							"Value": "{Status}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue4",
+							"KeyName": "Status",
+							"Visible": true
+						},
+						{
+							"Value": "{Urgency}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue5",
+							"KeyName": "Urgency",
+							"Visible": true
+						},
+						{
+							"Value": "{DeviceID}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue6",
+							"KeyName": "Defective Device ID",
+							"Visible": true
+						},
+						{
+							"Value": "{customer_ID}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue7",
+							"KeyName": "customer_ID",
+							"Visible": true
+						},
+						{
+							"Value": "{serviceWorker_ID}",
+							"_Type": "KeyValue.Type.Item",
+							"_Name": "KeyValue8",
+							"KeyName": "serviceWorker_ID",
+							"Visible": true
+						}
+					],
+					"MaxItemCount": 1,
+					"Separators": {
+						"TopSectionSeparator": false,
+						"BottomSectionSeparator": true,
+						"HeaderSeparator": true,
+						"FooterSeparator": true,
+						"ControlSeparator": true
+					},
+					"_Type": "Section.Type.KeyValue",
+					"_Name": "SectionKeyValue0",
+					"Visible": true,
+					"EmptySection": {
+						"FooterVisible": false
+					},
+					"Layout": {
+						"NumberOfColumns": 2
+					}
+				}
+			]
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Incident_Detail",
+	"ActionBar": {
+		"Items": [
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem1",
+				"Caption": "Edit",
+				"SystemItem": "Edit",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": "/MDKApp/Rules/Incident/EditOptionVisibility.js",
+				"OnPress": "/MDKApp/Actions/Incident/NavToIncident_Edit.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItem0",
+				"Caption": "View Image",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": "/MDKApp/Rules/Incident/ShowDeviceImageActionbarItem.js",
+				"OnPress": "/MDKApp/Actions/Incident/Incident_OpenDocument.action"
+			}
+		],
+		"_Name": "ActionBar0",
+		"_Type": "Control.Type.ActionBar",
+		"Caption": "Incident Detail",
+		"PrefersLargeCaption": true
+	}
+}

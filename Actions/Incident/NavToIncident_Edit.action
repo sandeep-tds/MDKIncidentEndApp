@@ -1,0 +1,6 @@
+{
+    "_Type": "Action.Type.Navigation",
+    "PageToOpen": "/MDKApp/Pages/Incident/Incident_Edit.page",
+    "ModalPage": true,
+    "ModalPageFullscreen": false
+}

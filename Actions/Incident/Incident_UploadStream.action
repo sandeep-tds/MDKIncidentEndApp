@@ -1,0 +1,31 @@
+{
+	"_Type": "Action.Type.ODataService.UploadStream",
+	"ActionResult": {
+		"_Name": "Incident_UploadStream"
+	},
+	"OnFailure": {
+		"Name": "/MDKApp/Actions/GenericMessageBox.action",
+		"Properties": {
+			"Message": "Upload Stream failure - {#ActionResults:Incident_UploadStream/error}",
+			"Title": "Upload Stream"
+		}
+	},
+	"OnSuccess": {
+		"Name": "/MDKApp/Actions/GenericToastMessage.action",
+		"Properties": {
+			"OnSuccess": "/MDKApp/Actions/CloseModalPage_Complete.action",
+			"Message": "Entity updated",
+			"Duration": 2,
+			"Animated": false
+		}
+	},
+	"Target": {
+		"Service": "/MDKApp/Services/IncidentManagement.service",
+		"EntitySet": "Incident",
+		"ReadLink": "{@odata.readLink}"
+	},
+	"Properties": {
+		"DeviceImage": "#Control:FCDeviceImage/#Value",
+		"ResolutionSignatureImage": "#Control:FCCustomerSignature/#Value"
+	}
+}
