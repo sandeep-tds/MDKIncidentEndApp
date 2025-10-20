@@ -86,7 +86,7 @@
 						"AvatarGrid": {
 							"ImageIsCircular": true
 						},
-						"OnPress": "/MDKApp/Actions/Incident/NavToIncident_Detail.action",
+						"OnPress": "/MDKApp/Actions/Incident/NavToIncident_NewDetail.action",
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
