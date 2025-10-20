@@ -1,8 +1,0 @@
-{
-    "_Type": "Action.Type.ToastMessage",
-    "Message": "Hello BC Demo App",
-    "OnSuccess": "/MDKApp/Actions/ClosePage.action",
-    "Duration": 3,
-    "Animated": true,
-    "NumberOfLines": 2
-}
