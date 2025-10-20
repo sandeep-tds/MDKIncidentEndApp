@@ -126,6 +126,16 @@
 				"IsIconCircular": false,
 				"Visible": true,
 				"OnPress": "/MDKApp/Actions/Application/UserMenuPopover.action"
+			},
+			{
+				"_Type": "Control.Type.ActionBarItem",
+				"_Name": "ActionBarItemButtonClicked",
+				"Caption": "Click Me",
+				"Icon": "sap-icon://message-information",
+				"Position": "Right",
+				"IsIconCircular": false,
+				"Visible": true,
+				"OnPress": "/MDKApp/Actions/ButtonClickedMessage.action"
 			}
 		],
 		"_Name": "ActionBar1",
