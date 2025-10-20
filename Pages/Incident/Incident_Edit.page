@@ -65,7 +65,7 @@
 							"IsVisible": false,
 							"Separator": true,
 							"IsEditable": true,
-							"MaxAttachments": 1,
+							"MaxAttachments": 0,
 							"MaxFileSize": 0,
 							"AttachmentActionType": [
 								"AddPhoto",
