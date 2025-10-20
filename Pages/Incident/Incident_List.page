@@ -86,7 +86,7 @@
 						"AvatarGrid": {
 							"ImageIsCircular": true
 						},
-						"OnPress": "/MDKApp/Actions/Incident/NavToIncident_NewDetail.action",
+						"OnPress": "/MDKApp/Actions/Incident/NavToIncident_Detail.action",
 						"_Type": "ObjectTable.Type.ObjectCell",
 						"Selected": false
 					},
@@ -135,7 +135,6 @@
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",
-		"_Name": "FioriToolbar0",
-		"Items": []
+		"_Name": "FioriToolbar0"
 	}
 }
