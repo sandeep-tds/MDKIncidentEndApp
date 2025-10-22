@@ -64,14 +64,23 @@
 							"RequiredIndicator": true,
 							"IsVisible": false,
 							"Separator": true,
+							"Validation": {
+								"Message": "Attach 1 image file (max 1MB)",
+								"Visible": true,
+								"SeparatorVisible": true
+							},
 							"IsEditable": true,
-							"MaxAttachments": 0,
-							"MaxFileSize": 0,
+							"MaxAttachments": 1,
+							"MaxFileSize": 1,
 							"AttachmentActionType": [
 								"AddPhoto",
-								"TakePhoto"
+								"TakePhoto",
+								"SelectFile"
 							],
 							"AttachmentTitle": "Device Image",
+							"AllowedFileTypes": [
+								"public.image"
+							],
 							"AttachmentAddTitle": "Add"
 						},
 						{

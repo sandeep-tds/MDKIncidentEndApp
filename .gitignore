@@ -2,3 +2,4 @@
 /.vscode
 /.che
 .DS_Store
+.project.json
