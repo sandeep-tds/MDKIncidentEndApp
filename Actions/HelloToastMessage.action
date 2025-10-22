@@ -1,8 +1,0 @@
-{
-	"Animated": true,
-	"Duration": 3,
-	"IsIconHidden": false,
-	"Message": "Hello!",
-	"NumberOfLines": 1,
-	"_Type": "Action.Type.ToastMessage"
-}

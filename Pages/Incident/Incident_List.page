@@ -135,17 +135,6 @@
 	},
 	"FioriToolbar": {
 		"_Type": "Control.Type.FioriToolbar",
-		"_Name": "FioriToolbar0",
-		"Items": [
-			{
-				"_Type": "FioriToolbarItem.Type.Button",
-				"_Name": "ToolbarButton0",
-				"Enabled": true,
-				"ButtonType": "Primary",
-				"Semantic": "Tint",
-				"Title": "Say Hello",
-				"OnPress": "/MDKApp/Actions/HelloToastMessage.action"
-			}
-		]
+		"_Name": "FioriToolbar0"
 	}
 }
